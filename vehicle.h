@@ -29,10 +29,9 @@ protected: // b/c we want to be able to access and view these details outside th
 	float couponCode;
 	*/
 public:
-	//Vehicle();// constructor 
 	//Vehicle(char vType, char vSize, char vMake, char vModel, char vCapactiy); // overloaded constructor
 	//~Vehicle(); // destructor
-	Vehicle();
+	Vehicle();//constructor
 	int vCount();
 
 
