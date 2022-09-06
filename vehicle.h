@@ -31,7 +31,7 @@ protected: // b/c we want to be able to access and view these details outside th
 
 public:
 	Vehicle();// constructor 
-	Vehicle(char cType, char cMake, char cModel); // overloaded constructor
+	Vehicle(char vType, char vMake, char vModel); // overloaded constructor
 	~Vehicle(); // destructor
 
 
