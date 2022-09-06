@@ -1,14 +1,12 @@
 //#pragma once
 #ifndef VEHICLE_H
 #define VEHICLE_H
-#include <iostream>
-#include <string>
-using namespace std;
 
 
 
 class Vehicle
 {
+	/*
 protected: // b/c we want to be able to access and view these details outside the class. [inheritance]
 	char vType[10];
 	char vSize[10];
@@ -18,7 +16,7 @@ protected: // b/c we want to be able to access and view these details outside th
 	char color[10];
 	float vMPG;
 	int seatingCapacity;
-	bool vNav;
+	bool vNav;*/
 
 	/*char pickUpLocation[20];
 	char dropOffLocation[20];
@@ -31,9 +29,11 @@ protected: // b/c we want to be able to access and view these details outside th
 	float couponCode;
 	*/
 public:
-	Vehicle();// constructor 
-	Vehicle(char vType, char vSize, char vMake, char vModel, char vCapactiy); // overloaded constructor
-	~Vehicle(); // destructor
+	//Vehicle();// constructor 
+	//Vehicle(char vType, char vSize, char vMake, char vModel, char vCapactiy); // overloaded constructor
+	//~Vehicle(); // destructor
+	Vehicle();
+	int vCount();
 
 
 

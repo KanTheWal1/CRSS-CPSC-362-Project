@@ -1,12 +1,11 @@
-#include "vehicle.h"
+#include <iostream>
+#include <fstream>
 #include "vehicle.cpp"
-// 
+using namespace std;
 
 int main()
 {
-
-
-    system("pause");
-    return 0;
+  Vehicle v;
+  v.vCount();
 
 }
