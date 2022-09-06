@@ -6,19 +6,22 @@
 
 class Vehicle
 {
-	/*
+
 protected: // b/c we want to be able to access and view these details outside the class. [inheritance]
-	char vType[10];
-	char vSize[10];
-	char vMake[20];
-	char vModel[10];
-	char plateNummber[7];
-	char color[10];
+	string vType;
+	string vSize;
+	string vMake;
+	string vModel;
+	string plateNumber;
+	string color;
 	float vMPG;
 	int seatingCapacity;
-	bool vNav;*/
+	bool vNav;
 
-	/*char pickUpLocation[20];
+
+public:
+	/*int vehicleCount;
+	char pickUpLocation[20];
 	char dropOffLocation[20];
 	int pickUpDate;
 	int dropOffDate;
@@ -34,6 +37,11 @@ public:
 	Vehicle();//constructor
 	int vCount();
 
+	Vehicle();// constructor 
+	Vehicle(string vType, string vSize, string vMake, string vModel, string plateNumber, string color, float vMPG, int seatingCapacity, bool vNav); // overloaded constructor
+	~Vehicle(); // destructor
+	int vCount();
+	//void pickUpInfo();
 
 
 };
