@@ -2,25 +2,31 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
 #include <iostream>
+#include <fstream>
 #include <string>
+#include <chrono>
 using namespace std;
 
 
 
 class Vehicle
 {
+
 protected: // b/c we want to be able to access and view these details outside the class. [inheritance]
-	char vType[10];
-	char vSize[10];
-	char vMake[20];
-	char vModel[10];
-	char plateNummber[7];
-	char color[10];
+	string vType;
+	string vSize;
+	string vMake;
+	string vModel;
+	string plateNumber;
+	string color;
 	float vMPG;
 	int seatingCapacity;
 	bool vNav;
 
-	/*char pickUpLocation[20];
+
+public:
+	/*int vehicleCount;
+	char pickUpLocation[20];
 	char dropOffLocation[20];
 	int pickUpDate;
 	int dropOffDate;
@@ -28,13 +34,13 @@ protected: // b/c we want to be able to access and view these details outside th
 	int dropOffTime;
 	float pricePerDay;
 	float pricePerWeek;
-	float couponCode;
-	*/
-public:
-	Vehicle();// constructor 
-	Vehicle(char vType, char vSize, char vMake, char vModel, char vCapactiy); // overloaded constructor
-	~Vehicle(); // destructor
+	float couponCode;*/
 
+	Vehicle();// constructor 
+	Vehicle(string vType, string vSize, string vMake, string vModel, string plateNumber, string color, float vMPG, int seatingCapacity, bool vNav); // overloaded constructor
+	~Vehicle(); // destructor
+	int vCount();
+	//void pickUpInfo();
 
 
 };
