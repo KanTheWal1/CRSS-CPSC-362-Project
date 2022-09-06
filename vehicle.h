@@ -11,6 +11,7 @@ class Vehicle
 {
 protected: // b/c we want to be able to access and view these details outside the class. [inheritance]
 	char vType[10];
+	char vSize[10];
 	char vMake[20];
 	char vModel[10];
 	char pickUpLocation[20];
@@ -30,7 +31,7 @@ protected: // b/c we want to be able to access and view these details outside th
 
 public:
 	Vehicle();// constructor 
-	Vehicle(string cType, string cMake, string cModel); // overloaded constructor
+	Vehicle(char cType, char cMake, char cModel); // overloaded constructor
 	~Vehicle(); // destructor
 
 
