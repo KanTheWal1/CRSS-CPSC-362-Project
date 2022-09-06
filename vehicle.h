@@ -14,13 +14,14 @@ protected: // b/c we want to be able to access and view these details outside th
 	char vSize[10];
 	char vMake[20];
 	char vModel[10];
-	char pickUpLocation[20];
-	char dropOffLocation[20];
-	char color[10];
-	int seatingCapacity;
-	float vMPG;
 	char plateNummber[7];
+	char color[10];
+	float vMPG;
+	int seatingCapacity;
 	bool vNav;
+
+	/*char pickUpLocation[20];
+	char dropOffLocation[20];
 	int pickUpDate;
 	int dropOffDate;
 	int pickUpTime;
@@ -28,10 +29,10 @@ protected: // b/c we want to be able to access and view these details outside th
 	float pricePerDay;
 	float pricePerWeek;
 	float couponCode;
-
+	*/
 public:
 	Vehicle();// constructor 
-	Vehicle(char vType, char vMake, char vModel); // overloaded constructor
+	Vehicle(char vType, char vSize, char vMake, char vModel, char vCapactiy); // overloaded constructor
 	~Vehicle(); // destructor
 
 
