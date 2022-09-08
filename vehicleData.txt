@@ -1,6 +1,6 @@
-Sedan Mid-size Toyota Camry XYZ123F White 32 5 ture
-Sedan Large Mercedes S500 WGV456T Black 20 5 true
-SUV Small Honda CRV YRS789O Red 26 5 true
-SUV Large Mercedes G55 YSL655T Blue 16 5 true
-Coupe Small Porsche Caymann JHL782V Yellow 2 true
-Coupe Mid-sized Chevolet Camaro JKL239J Green false
+Sedan Mid-size : Toyota Camry : XYZ123F White 32 5 ture
+Sedan Large : Mercedes S500 : WGV456T Black 20 5 true
+SUV Small : Honda CRV : YRS789O Red 26 5 true
+SUV Large : Mercedes G55 : YSL655T Blue 16 5 true
+Coupe Small : Porsche Caymann : JHL782V Yellow 2 true
+Coupe Mid-sized : Chevolet Camaro : JKL239J Green false

@@ -55,6 +55,35 @@ int Vehicle::vCount()
 	infile.close();
 	return count;
 }
+void Vehicle::disVehicle()
+{
+	map<string, string> vehicles;
+
+	string lines = "";
+
+	ifstream infile;
+
+	infile.open("vehicleData.txt");
+
+	while (getline(infile, lines))
+	{
+		string key = "";
+		string vData = "";
+		stringstream ss(lines);
+
+		getline(ss, key, ':');
+		ss >> ws;
+		getline(ss, vData);
+
+		// Store 
+		vehicles[key] = vData;
+
+		cout << "Vehicle count is: " << vehicles[key] << endl;
+	}
+
+	infile.close();
+	return;
+}
 /*void pickUpInfo()
 {
 	cout << 

@@ -3,7 +3,9 @@
 #define VEHICLE_H
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <string>
+#include <map>
 #include <chrono>
 using namespace std;
 
@@ -41,7 +43,7 @@ public:
 	~Vehicle(); // destructor
 	int vCount();
 	//void pickUpInfo();
-
+	void disVehicle();
 
 };
 #endif

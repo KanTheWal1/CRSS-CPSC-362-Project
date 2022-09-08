@@ -9,8 +9,9 @@ int main()
 
    Vehicle v;
    count = v.vCount();
+   v.disVehicle();
   // v.pickUpInfo();
-
+/*
    Customer c;
    customerAge = c.custAge(customerAge);
    customerFName = c.cFName();
@@ -21,7 +22,7 @@ int main()
    c.cResidence();
    c.stateResidence();
    c.zCode();
-
+   */
    // cout << endl << endl << customerAge << endl;
    // cout << endl << endl << customerFName << endl;
 
