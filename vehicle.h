@@ -3,7 +3,10 @@
 #define VEHICLE_H
 #include <iostream>
 #include <fstream>
+#include <ostream>
+#include <sstream>
 #include <string>
+#include <map>
 #include <chrono>
 using namespace std;
 
@@ -19,9 +22,9 @@ protected: // b/c we want to be able to access and view these details outside th
 	string vModel;
 	string plateNumber;
 	string color;
-	float vMPG;
-	int seatingCapacity;
-	bool vNav;
+	string vMPG;
+	string seatingCapacity;
+	string vNav;
 
 
 public:
@@ -37,11 +40,12 @@ public:
 	float couponCode;*/
 
 	Vehicle();// constructor 
-	Vehicle(string vType, string vSize, string vMake, string vModel, string plateNumber, string color, float vMPG, int seatingCapacity, bool vNav); // overloaded constructor
+	Vehicle(string vType, string vSize, string vMake, string vModel, string plateNumber, string color, string vMPG, string seatingCapacity, string vNav); // overloaded constructor
 	~Vehicle(); // destructor
 	int vCount();
 	//void pickUpInfo();
-
+	void disVehicle();
+	void addInventory();
 
 };
 #endif
