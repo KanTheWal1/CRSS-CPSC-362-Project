@@ -6,11 +6,16 @@ int main()
    int customerAge = 0;
    string customerFName = "";
    int count = 0;
+   string vInventory = "";
 
    Vehicle v;
-   count = v.vCount();
-  // v.pickUpInfo();
+   //count = v.vCount();
+   //v.disVehicle();
 
+   v.addInventory();
+   //v.disVehicle(vType, vSize, vMake, vModel, plateNumber, color, vMPG, seatingCapacity, vNav);
+  // v.pickUpInfo();
+/*
    Customer c;
    customerAge = c.custAge(customerAge);
    customerFName = c.cFName();
@@ -21,7 +26,7 @@ int main()
    c.cResidence();
    c.stateResidence();
    c.zCode();
-
+   */
    // cout << endl << endl << customerAge << endl;
    // cout << endl << endl << customerFName << endl;
 
