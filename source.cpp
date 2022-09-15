@@ -6,10 +6,14 @@ int main()
    int customerAge = 0;
    string customerFName = "";
    int count = 0;
+   string vInventory = "";
 
    Vehicle v;
-   count = v.vCount();
-   v.disVehicle();
+   //count = v.vCount();
+   //v.disVehicle();
+
+   v.addInventory();
+   //v.disVehicle(vType, vSize, vMake, vModel, plateNumber, color, vMPG, seatingCapacity, vNav);
   // v.pickUpInfo();
 /*
    Customer c;
