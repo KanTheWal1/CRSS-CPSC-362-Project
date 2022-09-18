@@ -1,63 +1,115 @@
-#include "vehicle.h"
 #include "customerInfo.h"
 
-int main()
+Customer::Customer()//constructor
 {
-   int customerAge = 0;
-   string customerFName = "";
-   int count = 0;
-   string vInventory = "";
-
-   Vehicle v;
-   //count = v.vCount();
-   //v.disVehicle();
-
-   v.addInventory();
-   //v.disVehicle(vType, vSize, vMake, vModel, plateNumber, color, vMPG, seatingCapacity, vNav);
-  // v.pickUpInfo();
-/*
-   Customer c;
-   customerAge = c.custAge(customerAge);
-   customerFName = c.cFName();
-   c.cLName();
-   c.DLNum();
-   c.stAddres();
-   c.aptNumber();
-   c.cResidence();
-   c.stateResidence();
-   c.zCode();
-   */
-   // cout << endl << endl << customerAge << endl;
-   // cout << endl << endl << customerFName << endl;
-
-    system("pause");
-    return 0;
-
+    customerFName = "";
+    customerLName= "";
+    customerAge = 0;
+    driversLicenseNumber = "";
+    streetAddress = "";
+    apartmentNumber = "";
+    cityOfResidence = "";
+    stateOfResidence = "";
+    zipCode = "";
 }
-/* ========================== Current Output =========================
-Vehicle count is: 6
+Customer::~Customer()//deconsructor
+{
+    
+}
+Customer::Customer(string customerFName,
+                   string customerLName,
+                   int customerAge,
+                   string driversLicenseNumber,
+                   string streetAddress,
+                   string apartmentNumber,
+                   string cityOfResidence,
+                   string stateOfResidence,
+                   string zipCode)//overloaded constructor
+{
+    this->customerFName = customerFName;
+    this->customerLName = customerLName;
+    this->customerAge = customerAge;
+    this->driversLicenseNumber = driversLicenseNumber;
+    this->streetAddress = streetAddress;
+    this->apartmentNumber = apartmentNumber;
+    this->cityOfResidence = cityOfResidence;
+    this->stateOfResidence = stateOfResidence;
+    this->zipCode = zipCode;
+}
+int Customer::custAge(int customerAge)
+{
+    cout << "\nPlease enter your current age: ";
+    cin >> customerAge;
 
-Please enter your current age: 35
+    //cout << endl << "Your current age is: " << customerAge << endl;
 
-Your current age is: 35
-Please enter your first name: ken
+    return customerAge;
+}
+string Customer::cFName()
+{
+    cout << "Please enter your first name: ";
+    cin.ignore();
+    getline(cin, customerFName);
 
+    // cout << endl << endl << customerFName << endl;
 
-ken
-Enter Last Name: walia
-walia
-Enter Driver's License Number: d3445669
-d3445669
-Enter your Street Address: 2405 Agnes Cir
-2405 Agnes Cir
-Enter Apartment Number:
+    return customerFName;
+}
+string Customer::cLName()
+{
+    cout << "Enter Last Name: ";
+    getline(cin, customerLName);
+    // cout << customerLName << endl;
 
-Enter City of Residence: Fullerton
-Fullerton
-Enter State of Residence: CA
-CA
-Enter Zip Code: 92835
-92835
-Press any key to continue . . .
+    return customerLName;
+}
+string Customer::DLNum()
+{
+    cout << "Enter Driver's License Number: ";
+    getline(cin, driversLicenseNumber);
+    // cout << driversLicenseNumber << endl;
 
-*/
+    return driversLicenseNumber;
+}
+string Customer::stAddres()
+{
+    cout << "Enter your Street Address: ";
+    getline(cin, streetAddress);
+    // cout << streetAddress << endl;
+
+    return streetAddress;
+}
+string Customer::aptNumber()
+{
+    cout << "Enter Apartment Number: ";
+    getline(cin, apartmentNumber);
+    //if (apartmentNumber == NULL)
+    // cout << apartmentNumber << endl;
+
+    return apartmentNumber;
+}
+string Customer::cResidence()
+{
+    cout << "Enter City of Residence: ";
+    getline(cin, cityOfResidence);
+    // cout << cityOfResidence << endl;
+
+    return cityOfResidence;
+}
+string Customer::stateResidence()
+{
+    cout << "Enter State of Residence: ";
+    getline(cin, stateOfResidence);
+    // cout << stateOfResidence << endl;
+
+    return stateOfResidence;
+}
+string Customer::zCode()
+{
+
+    cout << "Enter Zip Code: ";
+    getline(cin, zipCode);
+    // cout << zipCode << endl;
+
+    return zipCode;
+}
