@@ -22,7 +22,8 @@ int main()
   //v.disVehicle();
  
   //v.addInventory();
-  v.displayVehicle();
+  //v.displayVehicle();
+  v.deleteVehicle();
  // v.pickUpInfo();
   //v.deleteVehicle();
 /*

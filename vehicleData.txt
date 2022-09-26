@@ -5,4 +5,3 @@ SUV Large Mercedes G55 YSL655T Blue 16 5 False
 Coupe Small Porsche Caymann JHL782V Yellow 2 True
 Coupe Mid-sized Chevolet Camaro JKL239J Green False
 Coupe Small Honda S2000 YZF639I Silverstone  22 2 False 
-a a a a a a a a false 
