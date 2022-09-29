@@ -18,18 +18,16 @@ int main()
   string vInventory = "";
  
   Vehicle v;
-  //count = v.vCount();
-  //v.disVehicle();
- 
+  //v.vCount(); 
   //v.addInventory();
   //v.displayVehicle();
-  v.deleteVehicle();
- // v.pickUpInfo();
+  //v.deleteVehicle();
+  //v.pickUpInfo();
   //v.deleteVehicle();
 /*
   Customer c;
-  customerAge = c.custAge(customerAge);
-  customerFName = c.cFName();
+  c.custAge(customerAge);
+  c.cFName();
   c.cLName();
   c.DLNum();
   c.stAddres();
@@ -38,9 +36,6 @@ int main()
   c.stateResidence();
   c.zCode();
   */
-  // cout << endl << endl << customerAge << endl;
-  // cout << endl << endl << customerFName << endl;
- 
    system("pause");
    return 0;
  
