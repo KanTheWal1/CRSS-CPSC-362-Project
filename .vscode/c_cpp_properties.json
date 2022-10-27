@@ -2,9 +2,7 @@
     "configurations": [
         {
             "name": "Mac",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
+            "includePath": [],
             "defines": [],
             "macFrameworkPath": [
                 "/System/Library/Frameworks",
@@ -13,7 +11,34 @@
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "macos-gcc-x64"
+            "intelliSenseMode": "macos-gcc-x64",
+            "compilerArgs": [
+                "\\Program Files\\MySQL\\Connector C++ 1.1\\include",
+                "\\Program Files\\MySQL\\MySQL Server 8.0\\include",
+                "\\Program Files\\MySQL\\Connector C++ 1.1\\lib\\opt",
+                "\\Program Files\\MySQL\\MySQL Server 8.0\\lib",
+                "mysqlcppconn.lib",
+                "libmysql.lib"
+            ]
+        },
+        {
+            "name": "\\Program Files\\MySQ\\Connector c++1.1\\include",
+            "includePath": [],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-x64",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ],
     "version": 4

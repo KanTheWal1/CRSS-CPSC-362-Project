@@ -25,6 +25,7 @@ protected: // b/c we want to be able to access and view these details outside th
    string vMPG;
    string seatingCapacity;
    string vNav;
+   string vVin;
  
  
 public:
